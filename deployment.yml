@@ -25,11 +25,9 @@ kind: Service
 metadata:
   name: toolchain-service
 spec:
-  type: ClusterIp
   ports:
     - port: 8080
       targetPort: 8080
-      nodePort: 30004
   selector:
     app: toolchain-hello-world
 ---
