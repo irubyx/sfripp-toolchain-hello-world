@@ -38,9 +38,9 @@ kind: Ingress
 metadata:
   name: toolchain-ingress
 spec:
-  ingressClassName: toolchain-ingress
+  ingressClassName: public-iks-k8s-nginx
   rules:
-    - host: build-labs-latam-iks-2bef1f4b4097001da9502000c44fc2b2-0000.us-south.containers.appdomain.cloud
+    - host: sfripp.build-labs-latam-iks-2bef1f4b4097001da9502000c44fc2b2-0000.us-south.containers.appdomain.cloud
     - http:
         paths:
           - path: /
